@@ -3,14 +3,20 @@
     <head>
         <title>TROJAN</title>
         <meta charset="utf-8"/>
+        <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
       <main>
        <!-- <img src="https://i.kym-cdn.com/photos/images/newsfeed/001/176/251/4d7.png" alt="Hack" title="Another in-line element" width="300"> -->
-       <h1>Welcome to xXburgersXx</h1>
-        
-        
-       <section>
+
+       <div id="headline">
+         
+         <img src="../picture2.jpeg">
+         <!--<img src="https://nerdist.com/wp-content/uploads/2018/03/tumblr_m29qfc3lex1rpf9sro1_1280.jpg" alt="nice beautiful" title="My burgershop" > -->
+         <h1>Welcome to xXburgersXx</h1>
+       </div>
+       <section id="burger">
          <h2>Select your choice of our selection of burgers</h2>
          <p>
            This is where you need to make a choice
@@ -19,31 +25,31 @@
            <tbody>
              <tr>
                <td>
-                 <h3 align="center">The classic homemade burger</h3>
+                 <h3 align="left">The classic homemade burger</h3>
                  <img src="http://apps.chicagotribune.com/burger-chain-ranking/img/full/mcdonalds-cheeseburger.jpg" alt="Burger1" title="Nice burger" height="200">
                  <ul>
                    <li>Made the traditional way</li>
-                   <li>Meat</li>
+                   <li class="ingredientLine"><span id="ingredient">Meat</span></li>
                    <li>Served warmed</li>
                  </ul>
                </td>
                
                <td>
-                 <h3 align="center">Double burger</h3>
-                 <img src="http://clipart-library.com/image_gallery/149336.png" alt="Burger2" title="Cartoon burger" height="200">
+                 <h3 align="left">Double burger</h3>
+                 <img src="https://s23991.pcdn.co/wp-content/uploads/2004/06/fearing-burger.jpg" alt="Burger2" title="Cartoon burger" height="200">
                  <ul>
                    <li>Made in China</li>
-                   <li>Double the meat</li>
+                   <li class="ingredientLine">Double the <span id="ingredient">meat</span></li>
                    <li>Buns are well baked</li>
                  </ul>
                </td>
 
                <td>
-                 <h3 align="center">Fat fuck</h3>
+                 <h3 align="left">Fat fuck</h3>
                  <img src="https://media.cntraveler.com/photos/5707d1de3f3075e85c9a71fd/4:3/w_480,c_limit/nashville-burger-republic-cr-courtesy.jpg" alt="Burger3" title="Big burger" height="200">
                  <ul>
-                   <li>Extra fries</li>
-                   <li>Contains meat</li>
+                   <li class="ingredientLine">Extra <span id="ingredient">fries</span></li>
+                   <li class="ingredientLine">Contains <span id="ingredient">meat</span></li>
                    <li>Wood stick through the burger</li>
                  </ul>
                </td>
@@ -52,7 +58,7 @@
          </table>
        </section>
        
-       <section>
+       <section id="payment">
          <h2>Provide your information daddy</h2>
          <p>
            Tell us who you are and where you live
@@ -63,7 +69,7 @@
              <input type="text" id="fullname" name="fn" required="required" placeholder="Full name">
            </p>
            <p>
-             <label for="email">Email</label><br>
+             <label for="email">E-mail</label><br>
              <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
            </p>
            <p>
@@ -81,15 +87,15 @@
                <option>Credit card</option>
                <option>Cash</option>
                <option>Natura</option>
-               <option>BitCoin</option>
+               <option>Bitcoin</option>
                <option>Pushups</option>
              </select>
            </p>
 
            <p>
-             <input type="radio" id="male" name="gender" value="male"> <label for="male">Male</label><br>
-             <input type="radio" id="female" name="gender" value="female"> <label for="female">Female</label><br>
-             <input type="radio" id="other" name="gender" value="other" checked = "checked"> <label for="other">do not wish to provide</label>
+             <input type="radio" class="gender" id="male" name="gender" value="male"> <label for="male">Male</label><br>
+             <input type="radio" class="gender" id="female" name="gender" value="female"> <label for="female">Female</label><br>
+             <input type="radio" class="gender" id="other" name="gender" value="other" checked = "checked"> <label for="other">do not wish to provide</label>
            </p>
          </form>
        </section>
@@ -97,7 +103,7 @@
        <button type="submit"><img src="https://cdn3.iconfinder.com/data/icons/restaurant-40/50/Food_delivery-512.png" height="20">Send order</button>
        
       </main>
-      <hr>
-      <footer>This is my footer. There are many like it, but this one is mine <br /> &copy2019 Fitt Erik</footer>
+      <hr> <!-- gör en linje innan footern  -->
+      <footer>This is my footer. There are many like it, but this one is mine <br /> &copy2019 Fitt Lars</footer>
     </body>
 </html>
