@@ -3,7 +3,7 @@
 body {
     font-family: "Arial", serif;
     font-size: 13pt;
-    background: grey;
+    background: white;
 }
 
 .ingredientLine {
@@ -48,12 +48,13 @@ table {
 
 #headline > h1 {
     position: absolute;
-    margin-top: -340px;
+    margin-top: -160px;
+    padding-left: 400px;
     
 }
 
 #headline > img {
-    opacity: .6;
+    opacity: .7;
     width: 100%;
     height: auto;
 }
@@ -75,3 +76,28 @@ ul {
     padding-left: 20px;
 }
 
+.burgers {
+    display:grid;
+    grid-gap:1px;
+    grid-template-columns: 360px 300px 420px;
+}
+
+.burger {
+    padding: 10px;
+}
+
+.a {
+    grid-column:1;
+}
+
+.b {
+    grid-column:2;
+}
+
+.c {
+    grid-column:3;
+}
+
+footer {
+    color: black;
+}
